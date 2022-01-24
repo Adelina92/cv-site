@@ -1,17 +1,25 @@
 import styles from "./Header.module.css";
+import { withContainer } from "../../utils/container";
+
 
 export default function Header() {
-    const rootMixedStyles = [styles.root, "container"].join(" ");
-    return <header className={rootMixedStyles}>
-        <a className={styles.logo}>logo</a>
-        <nav className={styles.navWrapper}>
-            <ul className={styles.nav}>
-                <li>Кнопка 1</li>
-                <li>Кнопка 2</li>
-                <li>Кнопка 3</li>
-                <li>Кнопка 4</li>
-                <li>Кнопка 5</li>
-            </ul>
-        </nav>
-    </header>;
+  const navigateTo = (id) => {
+    document.getElementById(id).scrollIntoView({behavior:"smooth"});
+  }
+    return (
+    <div className={withContainer(styles.root)}>
+    <header className={styles.menu}>
+     <a className={styles.logo}><img src="logo.png"/></a>
+    <nav className={styles.navWrapper}>
+      <ul className={styles.nav}>
+          <li><a className={styles.menuButton} onClick={() => navigateTo("home")}>HOME</a></li>
+          <li><a className={styles.menuButton} onClick={() => navigateTo("services")}>SERVICES</a></li>
+          <li><a className={styles.menuButton} onClick={() => navigateTo("portfolio")}>PORTFOLIO</a></li>
+          <li><a className={styles.menuButton} onClick={() => navigateTo("contact")}>CONTACT</a></li>
+          <li><button className={styles.hireButton}>HIRE ME</button></li>
+      </ul>
+    </nav>
+    </header>
+    </div>
+    );
 }

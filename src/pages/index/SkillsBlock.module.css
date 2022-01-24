@@ -1,0 +1,53 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.title {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.description {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 40%;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.features {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skillCard {
+    width: 30%;
+    padding: 70px;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.skillCard:hover {
+    background-color: blueviolet;
+    color: white;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.skillCard h4 {
+    margin-top: 20px;
+}
+
+.skillCard p {
+    margin-top: 10px;
+}
+
+.skillCard img {
+    height: 50px;
+    width: 50px;
+}

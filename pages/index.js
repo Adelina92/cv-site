@@ -1,6 +1,10 @@
 import Head from 'next/head'
-import Header from '../src/pages/common/Header'
-import { Footer } from '../src/pages/common/Footer'
+import PresentationBlock from '../src/pages/index/PresentationBlock'
+import SkillsBlock from '../src/pages/index/SkillsBlock'
+import RecordBlock from '../src/pages/index/RecordBlock'
+import PortfolioBlock from '../src/pages/index/PortfolioBlock'
+import ContactForm from '../src/pages/index/ContactForm/ContactForm'
+import Footer from '../src/pages/common/Footer'
 
 export default function Home() {
   return (
@@ -8,8 +12,11 @@ export default function Home() {
     <Head>
       <title>Index page</title>
     </Head>
-    <Header/>
-    <h1>Hello World</h1>
+    <PresentationBlock/>
+    <SkillsBlock/>
+    <RecordBlock/>
+    <PortfolioBlock/>
+    <ContactForm/>
     <Footer/>
     </>
   )

@@ -1,0 +1,46 @@
+.wrapper {
+    background-image: url("/bg-photo.jpg");
+    width: 100%;    
+}
+
+.root {
+    width: 100%;
+    display: flex;
+}
+
+.info {
+    width: 40%;
+    margin-top: 200px;
+}
+
+.info p {
+    margin-top: 20px;
+    color: rgb(59, 59, 59);
+}
+
+.info button {
+    margin-top: 20px;
+    width: 140px;
+    height: 30px;
+    background-color: blueviolet;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    border-radius:2em;
+    border: none;
+}
+
+.info button:hover {
+    box-shadow: 0 12px 16px 0 rgba(66, 2, 66, 0.151), 0 17px 50px 0 rgba(66, 2, 66, 0.151);
+    cursor: pointer;
+  }
+
+.image {
+    flex-grow: 1;
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+.image img {
+    width: 100%;
+}
